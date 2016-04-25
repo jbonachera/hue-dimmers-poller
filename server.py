@@ -59,6 +59,7 @@ def main():
         if sensor.get('type') == 'ZLLSwitch':
             __memory__[sensor['uniqueid']] = sensor['state']['lastupdated']
     print("Started")
+    sleep_time = os.environ.get('SLEEP_TIME', 0.3)
     while True:
         try:
             for _, sensor in sensors().items():
