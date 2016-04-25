@@ -14,6 +14,7 @@ Configuration parameters are passed to the application via environment variables
 | MQTT_TOPIC| MQTT topic to publish to. '{}' will be replaced with the dimmer unique id| no | dimmer/{}|
 | HUE_BRIDGE | HUE bridge IP| yes | None |
 | HUE_USERNAME | HUE username to use| yes | None|
+| SLEEP_TIME | Time to sleep between 2 polls | no | 0.3s |
 
 ## How to run
 
