@@ -65,7 +65,7 @@ def main():
             for _, sensor in sensors().items():
                 if sensor.get('type') == 'ZLLSwitch':
                     check_change((sensor))
-            time.sleep(0.3)
+            time.sleep(sleep_time)
         except KeyboardInterrupt:
             clean_exit(False, False)
             break
